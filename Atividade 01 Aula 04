@@ -1,0 +1,57 @@
+package Aula04;
+import java.util.Scanner;
+
+
+public class Exercicio01 {
+	public static void main (String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.println("Digite um número de 1 a 7: ");
+		
+		int numero = scanner.nextInt();
+		
+		String diasemana;
+		
+		switch (numero) {
+		
+		case 1:
+			diasemana = "Domingo";
+			break;
+			
+		case 2:
+			diasemana = "Segunda";
+			break;
+			
+		case 3:
+			diasemana = "Terça";
+			break;
+			
+		case 4:
+			diasemana = "Quarta";
+			break;
+			
+		case 5:
+			diasemana = "Quinta";
+			break;
+			
+		case 6:
+			diasemana = "Sexta";
+			break;
+			
+		case 7: 
+			diasemana = "Sabado";
+			break;
+			
+		default:
+			diasemana = "Dia invalido";
+			break;
+			
+				
+			}
+		
+		System.out.println(" O dia da semana que corresponde ao número " + numero + " é: " + diasemana);
+			
+		
+	}
+
+}
